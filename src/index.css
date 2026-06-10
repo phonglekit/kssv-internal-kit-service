@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 40% 12%;
+    --foreground: 60 10% 95%;
+
+    --card: 220 45% 16%;
+    --card-foreground: 60 10% 95%;
+
+    --popover: 220 20% 6%;
+    --popover-foreground: 60 10% 95%;
+
+    --primary: 175 80% 50%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 220 40% 20%;
+    --secondary-foreground: 60 10% 90%;
+
+    --muted: 220 40% 18%;
+    --muted-foreground: 200 20% 65%;
+
+    --accent: 175 80% 50%;
+    --accent-foreground: 220 20% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 10% 95%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 175 80% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom design tokens */
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(220 60% 15%) 0%,
+      hsl(200 50% 20%) 50%,
+      hsl(175 40% 25%) 100%
+    );
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(220 50% 18%) 0%,
+      hsl(210 45% 14%) 100%
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(175 80% 40%) 0%,
+      hsl(200 80% 50%) 100%
+    );
+    --shadow-glow: 0 0 60px -15px hsl(175 80% 50% / 0.3);
+    --shadow-card: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
+
+    /* Fonts */
+    --font-display: 'Be Vietnam Pro', sans-serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
+
+    --sidebar-background: 220 20% 6%;
+    --sidebar-foreground: 60 10% 90%;
+    --sidebar-primary: 175 80% 50%;
+    --sidebar-primary-foreground: 220 20% 4%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 60 10% 90%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 175 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  .glow-shadow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .line-decoration {
+    position: relative;
+  }
+
+  .line-decoration::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 60px;
+    height: 1px;
+    background: hsl(var(--primary));
+    transform: translateY(-50%);
+  }
+
+  .overlay-dark {
+    background: linear-gradient(
+      180deg,
+      hsl(220 50% 12% / 0.7) 0%,
+      hsl(200 45% 15% / 0.9) 100%
+    );
+  }
+
+  .nav-link {
+    @apply relative text-sm first-letter:uppercase tracking-[0.1em] text-muted-foreground transition-colors duration-300;
+  }
+
+  .nav-link:hover {
+    @apply text-foreground;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 h-px w-0 bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

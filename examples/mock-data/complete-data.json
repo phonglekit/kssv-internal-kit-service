@@ -1,0 +1,690 @@
+{
+  "data": [
+    {
+      "fieldId": "general_content",
+      "domains": [
+        {
+          "fieldId": "domains",
+          "slug": "ecommerce",
+          "icon": "shopping-bag",
+          "name": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Thương mại điện tử",
+              "en": "E-Commerce",
+              "jp": "Eコマース"
+            }
+          ],
+          "description": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Giải pháp thương mại điện tử toàn diện cho doanh nghiệp",
+              "en": "Comprehensive e-commerce solutions for businesses",
+              "jp": "企業向けの包括的なEコマースソリューション"
+            }
+          ]
+        },
+        {
+          "fieldId": "domains",
+          "slug": "healthcare",
+          "icon": "heart-pulse",
+          "name": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Y tế - Sức khỏe",
+              "en": "Healthcare",
+              "jp": "ヘルスケア"
+            }
+          ],
+          "description": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Ứng dụng công nghệ cho ngành y tế và chăm sóc sức khỏe",
+              "en": "Technology applications for healthcare industry",
+              "jp": "医療業界向けのテクノロジーアプリケーション"
+            }
+          ]
+        },
+        {
+          "fieldId": "domains",
+          "slug": "finance",
+          "icon": "landmark",
+          "name": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Tài chính - Ngân hàng",
+              "en": "Finance & Banking",
+              "jp": "金融・銀行"
+            }
+          ],
+          "description": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Giải pháp công nghệ cho ngành tài chính và ngân hàng",
+              "en": "Technology solutions for finance and banking sector",
+              "jp": "金融・銀行セクター向けのテクノロジーソリューション"
+            }
+          ]
+        },
+        {
+          "fieldId": "domains",
+          "slug": "education",
+          "icon": "graduation-cap",
+          "name": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Giáo dục",
+              "en": "Education",
+              "jp": "教育"
+            }
+          ],
+          "description": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Nền tảng học tập trực tuyến và quản lý giáo dục",
+              "en": "Online learning platforms and education management",
+              "jp": "オンライン学習プラットフォームと教育管理"
+            }
+          ]
+        },
+        {
+          "fieldId": "domains",
+          "slug": "retail",
+          "icon": "store",
+          "name": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Bán lẻ",
+              "en": "Retail",
+              "jp": "小売"
+            }
+          ],
+          "description": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Giải pháp số hóa cho ngành bán lẻ",
+              "en": "Digital solutions for retail industry",
+              "jp": "小売業界向けのデジタルソリューション"
+            }
+          ]
+        }
+      ],
+      "certificates": [
+        {
+          "fieldId": "certificates",
+          "isssuer": "AWS",
+          "title": [
+            {
+              "fieldId": "locale_content",
+              "vi": "AWS Solutions Architect Professional",
+              "en": "AWS Solutions Architect Professional",
+              "jp": "AWS Solutions Architect Professional"
+            }
+          ]
+        },
+        {
+          "fieldId": "certificates",
+          "isssuer": "Google Cloud",
+          "title": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Google Cloud Professional Architect",
+              "en": "Google Cloud Professional Architect",
+              "jp": "Google Cloud Professional Architect"
+            }
+          ]
+        },
+        {
+          "fieldId": "certificates",
+          "isssuer": "Microsoft",
+          "title": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Azure Solutions Architect Expert",
+              "en": "Azure Solutions Architect Expert",
+              "jp": "Azure Solutions Architect Expert"
+            }
+          ]
+        }
+      ],
+      "partners": [
+        {
+          "fieldId": "partners",
+          "name": "AWS",
+          "website": "https://aws.amazon.com",
+          "description": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Đối tác chính thức của Amazon Web Services",
+              "en": "Official Amazon Web Services Partner",
+              "jp": "Amazon Web Services公式パートナー"
+            }
+          ]
+        },
+        {
+          "fieldId": "partners",
+          "name": "Google Cloud",
+          "website": "https://cloud.google.com",
+          "description": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Đối tác Google Cloud Platform",
+              "en": "Google Cloud Platform Partner",
+              "jp": "Google Cloud Platformパートナー"
+            }
+          ]
+        },
+        {
+          "fieldId": "partners",
+          "name": "Microsoft Azure",
+          "website": "https://azure.microsoft.com",
+          "description": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Đối tác Microsoft Azure",
+              "en": "Microsoft Azure Partner",
+              "jp": "Microsoft Azureパートナー"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fieldId": "projects",
+      "projects": [
+        {
+          "fieldId": "main_content",
+          "slug": "ecommerce-platform-2024",
+          "status": ["Done"],
+          "category": ["WEB"],
+          "domains": "retail,ecommerce,logistics",
+          "timeline": "01/2024 - 06/2024",
+          "title": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Nền tảng Thương mại Điện tử Toàn diện",
+              "en": "Comprehensive E-Commerce Platform",
+              "jp": "包括的なEコマースプラットフォーム"
+            }
+          ],
+          "summary": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Một nền tảng thương mại điện tử đầy đủ tính năng với quản lý kho hàng thời gian thực, tích hợp thanh toán liền mạch và hệ thống gợi ý sản phẩm thông minh dựa trên AI.",
+              "en": "A full-featured e-commerce platform with real-time inventory management, seamless payment integration, and AI-powered smart product recommendation system.",
+              "jp": "リアルタイム在庫管理、シームレスな決済統合、AIによるスマート商品推薦システムを備えたフル機能のEコマースプラットフォーム。"
+            }
+          ],
+          "challenge": [
+            {
+              "fieldId": "challenge",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Khách hàng cần một giải pháp để quản lý hàng nghìn sản phẩm với hiệu suất cao, xử lý hàng trăm đơn hàng đồng thời và cung cấp trải nghiệm mua sắm mượt mà trên mọi thiết bị.",
+                  "en": "Client needed a solution to manage thousands of products with high performance, handle hundreds of concurrent orders, and provide smooth shopping experience across all devices.",
+                  "jp": "クライアントは、高性能で数千の製品を管理し、数百の同時注文を処理し、すべてのデバイスでスムーズなショッピング体験を提供するソリューションを必要としていました。"
+                }
+              ],
+              "alt": "E-commerce challenges"
+            }
+          ],
+          "solution": [
+            {
+              "fieldId": "Solution",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Chúng tôi đã xây dựng một nền tảng có khả năng mở rộng cao sử dụng kiến trúc microservices.",
+                  "en": "We built a highly scalable platform using microservices architecture.",
+                  "jp": "マイクロサービスアーキテクチャを使用した高度にスケーラブルなプラットフォームを構築しました。"
+                }
+              ],
+              "features": [
+                {
+                  "fieldId": "Feature_item",
+                  "icon": "shopping-cart",
+                  "title": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Giỏ hàng thông minh",
+                      "en": "Smart Shopping Cart",
+                      "jp": "スマートショッピングカート"
+                    }
+                  ],
+                  "description": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Giỏ hàng với khả năng đồng bộ đa thiết bị",
+                      "en": "Cart with multi-device synchronization",
+                      "jp": "マルチデバイス同期機能付きカート"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "service_provided": [
+            {
+              "fieldId": "services_provided",
+              "icon": "code",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Phát triển Full-stack",
+                  "en": "Full-stack Development",
+                  "jp": "フルスタック開発"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Phát triển frontend với React và backend với Node.js",
+                  "en": "Frontend development with React and backend with Node.js",
+                  "jp": "Reactによるフロントエンド開発とNode.jsによるバックエンド開発"
+                }
+              ]
+            }
+          ],
+          "tech_stack": [
+            {
+              "fieldId": "tech_stack",
+              "name": "React",
+              "icon": "react-original"
+            },
+            {
+              "fieldId": "tech_stack",
+              "name": "Node.js",
+              "icon": "nodejs-original"
+            }
+          ],
+          "features": [
+            {
+              "fieldId": "Feature_item",
+              "icon": "zap",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Hiệu suất cao",
+                  "en": "High Performance",
+                  "jp": "高性能"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Trang web tải trong dưới 2 giây",
+                  "en": "Website loads in under 2 seconds",
+                  "jp": "2秒以内にウェブサイトが読み込まれます"
+                }
+              ]
+            }
+          ],
+          "featured_in": [
+            {
+              "fieldId": "feature_in_item",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "TechCrunch",
+                  "en": "TechCrunch",
+                  "jp": "TechCrunch"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Được TechCrunch vinh danh",
+                  "en": "Recognized by TechCrunch",
+                  "jp": "TechCrunchによって認められました"
+                }
+              ]
+            }
+          ],
+          "impact": [
+            {
+              "fieldId": "impact",
+              "value": "300%",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Tăng trưởng doanh thu",
+                  "en": "Revenue growth",
+                  "jp": "収益成長"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fieldId": "main_content",
+          "slug": "ai-customer-support-chatbot",
+          "status": ["Done"],
+          "category": ["AI"],
+          "domains": "customer-service,healthcare,finance",
+          "timeline": "03/2024 - 08/2024",
+          "title": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Chatbot Chăm sóc Khách hàng Thông minh",
+              "en": "Intelligent Customer Support Chatbot",
+              "jp": "インテリジェント顧客サポートチャットボット"
+            }
+          ],
+          "summary": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Chatbot AI đa ngôn ngữ với khả năng hiểu ngữ cảnh sâu.",
+              "en": "Multilingual AI chatbot with deep contextual understanding.",
+              "jp": "深い文脈理解を持つ多言語AIチャットボット。"
+            }
+          ],
+          "challenge": [
+            {
+              "fieldId": "challenge",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Công ty cần xử lý hơn 10,000 câu hỏi khách hàng mỗi ngày.",
+                  "en": "Company needed to handle over 10,000 customer inquiries daily.",
+                  "jp": "企業は1日あたり10,000件以上の顧客問い合わせを処理する必要がありました。"
+                }
+              ],
+              "alt": "High volume customer support"
+            }
+          ],
+          "solution": [
+            {
+              "fieldId": "Solution",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Chatbot AI sử dụng GPT-4 và RAG.",
+                  "en": "AI chatbot using GPT-4 and RAG.",
+                  "jp": "GPT-4とRAGを使用したAIチャットボット。"
+                }
+              ],
+              "features": [
+                {
+                  "fieldId": "Feature_item",
+                  "icon": "languages",
+                  "title": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Đa ngôn ngữ",
+                      "en": "Multilingual",
+                      "jp": "多言語"
+                    }
+                  ],
+                  "description": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Hỗ trợ nhiều ngôn ngữ",
+                      "en": "Multiple language support",
+                      "jp": "多言語サポート"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "service_provided": [
+            {
+              "fieldId": "services_provided",
+              "icon": "brain",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Phát triển AI",
+                  "en": "AI Development",
+                  "jp": "AI開発"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Xây dựng mô hình AI",
+                  "en": "Build AI models",
+                  "jp": "AIモデルの構築"
+                }
+              ]
+            }
+          ],
+          "tech_stack": [
+            {
+              "fieldId": "tech_stack",
+              "name": "GPT-4",
+              "icon": "openai-original"
+            },
+            {
+              "fieldId": "tech_stack",
+              "name": "Python",
+              "icon": "python-original"
+            }
+          ],
+          "features": [
+            {
+              "fieldId": "Feature_item",
+              "icon": "clock",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Phản hồi tức thì",
+                  "en": "Instant Response",
+                  "jp": "即座の応答"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Trả lời trong vòng 2 giây",
+                  "en": "Responds in 2 seconds",
+                  "jp": "2秒以内に応答"
+                }
+              ]
+            }
+          ],
+          "featured_in": [
+            {
+              "fieldId": "feature_in_item",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "AI Vietnam",
+                  "en": "AI Vietnam",
+                  "jp": "AI Vietnam"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Case study về AI",
+                  "en": "AI case study",
+                  "jp": "AIケーススタディ"
+                }
+              ]
+            }
+          ],
+          "impact": [
+            {
+              "fieldId": "impact",
+              "value": "70%",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Giảm chi phí",
+                  "en": "Cost reduction",
+                  "jp": "コスト削減"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fieldId": "main_content",
+          "slug": "realtime-data-analytics-platform",
+          "status": ["In Progress"],
+          "category": ["DATA"],
+          "domains": "finance,analytics,business-intelligence",
+          "timeline": "05/2024 - 12/2024",
+          "title": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Nền tảng Phân tích Dữ liệu Thời gian Thực",
+              "en": "Real-time Data Analytics Platform",
+              "jp": "リアルタイムデータ分析プラットフォーム"
+            }
+          ],
+          "summary": [
+            {
+              "fieldId": "locale_content",
+              "vi": "Nền tảng phân tích dữ liệu lớn với khả năng xử lý hàng triệu sự kiện.",
+              "en": "Big data analytics platform processing millions of events.",
+              "jp": "数百万のイベントを処理するビッグデータ分析プラットフォーム。"
+            }
+          ],
+          "challenge": [
+            {
+              "fieldId": "challenge",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Xử lý hàng triệu giao dịch mỗi ngày.",
+                  "en": "Process millions of transactions daily.",
+                  "jp": "毎日数百万の取引を処理。"
+                }
+              ],
+              "alt": "Big data processing"
+            }
+          ],
+          "solution": [
+            {
+              "fieldId": "Solution",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Data lakehouse architecture.",
+                  "en": "Data lakehouse architecture.",
+                  "jp": "データレイクハウスアーキテクチャ。"
+                }
+              ],
+              "features": [
+                {
+                  "fieldId": "Feature_item",
+                  "icon": "activity",
+                  "title": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Real-time",
+                      "en": "Real-time",
+                      "jp": "リアルタイム"
+                    }
+                  ],
+                  "description": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Xử lý real-time",
+                      "en": "Real-time processing",
+                      "jp": "リアルタイム処理"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "service_provided": [
+            {
+              "fieldId": "services_provided",
+              "icon": "database",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Data Engineering",
+                  "en": "Data Engineering",
+                  "jp": "データエンジニアリング"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Xây dựng data pipeline",
+                  "en": "Build data pipelines",
+                  "jp": "データパイプラインの構築"
+                }
+              ]
+            }
+          ],
+          "tech_stack": [
+            {
+              "fieldId": "tech_stack",
+              "name": "Apache Kafka",
+              "icon": "apachekafka-original"
+            },
+            {
+              "fieldId": "tech_stack",
+              "name": "Apache Spark",
+              "icon": "apachespark-original"
+            }
+          ],
+          "features": [
+            {
+              "fieldId": "Feature_item",
+              "icon": "zap",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Siêu nhanh",
+                  "en": "Ultra-fast",
+                  "jp": "超高速"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Query trong vài giây",
+                  "en": "Query in seconds",
+                  "jp": "数秒でクエリ"
+                }
+              ]
+            }
+          ],
+          "featured_in": [
+            {
+              "fieldId": "feature_in_item",
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Data Engineering Weekly",
+                  "en": "Data Engineering Weekly",
+                  "jp": "Data Engineering Weekly"
+                }
+              ],
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Case study",
+                  "en": "Case study",
+                  "jp": "ケーススタディ"
+                }
+              ]
+            }
+          ],
+          "impact": [
+            {
+              "fieldId": "impact",
+              "value": "5M",
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Events mỗi giây",
+                  "en": "Events per second",
+                  "jp": "毎秒イベント"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

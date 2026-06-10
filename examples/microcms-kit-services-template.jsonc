@@ -1,0 +1,735 @@
+// ═══════════════════════════════════════════════════════════════════════════════
+// HƯỚNG DẪN CHO TEAM MARKETING SỬ DỤNG MICROCMS
+// ═══════════════════════════════════════════════════════════════════════════════
+// 
+// File này là template mẫu cho API endpoint: 'kit_services'
+// Endpoint: https://5cf7n4nbnx.microcms.io/api/v1/kit_services
+// 
+// CÁCH SỬ DỤNG:
+// 1. Truy cập microCMS Dashboard → https://5cf7n4nbnx.microcms.io
+// 2. Vào API "kit_services"
+// 3. Tạo/Edit content theo cấu trúc bên dưới
+// 4. Các field đã được thiết lập sẵn, chỉ cần điền nội dung
+//
+// LƯU Ý QUAN TRỌNG:
+// ✅ Tất cả text đều có 3 ngôn ngữ: vi (Tiếng Việt), en (English), jp (日本語)
+// ✅ Ảnh phải upload qua microCMS Media Library (tự động có url, width, height)
+// ✅ Select fields (category, status) chọn từ dropdown có sẵn
+// ✅ Không cần nhập id, createdAt, updatedAt - microCMS tự động quản lý
+// ✅ Thứ tự ngôn ngữ: vi → en → jp (để dễ đọc)
+//
+// ═══════════════════════════════════════════════════════════════════════════════
+
+{
+  "contents": [
+    {
+      // ═══════════════════════════════════════════════════════════════════════════
+      // METADATA - Tự động do microCMS quản lý, KHÔNG cần nhập thủ công
+      // ═══════════════════════════════════════════════════════════════════════════
+      "id": "kit-services-001",
+      "createdAt": "2024-01-15T10:00:00.000Z",
+      "updatedAt": "2024-01-20T15:30:00.000Z",
+      "publishedAt": "2024-01-16T09:00:00.000Z",
+      "revisedAt": "2024-01-20T15:30:00.000Z",
+      
+      // ═══════════════════════════════════════════════════════════════════════════
+      // DATA CHÍNH - Array chứa 2 phần: general_content + projects
+      // ═══════════════════════════════════════════════════════════════════════════
+      "data": [
+        // ─────────────────────────────────────────────────────────────────────────
+        // PHẦN 1: GENERAL CONTENT (Domains, Certificates, Partners)
+        // ─────────────────────────────────────────────────────────────────────────
+        {
+          "fieldId": "general_content",
+          
+          // ┌─────────────────────────────────────────────────────────────────────┐
+          // │ DOMAINS - Các lĩnh vực/ngành nghề mà công ty phục vụ               │
+          // └─────────────────────────────────────────────────────────────────────┘
+          "domains": [
+            {
+              "fieldId": "domains",
+              
+              // Slug cho URL (chỉ chữ thường, dấu gạch ngang, không dấu)
+              // ⚠️ QUAN TRỌNG: Slug phải unique, không trùng lặp
+              // Ví dụ: ecommerce, healthcare, finance, education, retail
+              "slug": "ecommerce",
+              
+              // Tên lĩnh vực (3 ngôn ngữ) - Array chứa 1 object
+              // ⚠️ CHÚ Ý: Thứ tự: vi → en → jp
+              "name": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Thương mại điện tử",
+                  "en": "E-Commerce",
+                  "jp": "Eコマース"
+                }
+              ],
+              
+              // Mô tả ngắn về lĩnh vực (3 ngôn ngữ) - Array chứa 1 object
+              // Độ dài đề xuất: 50-100 ký tự
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Giải pháp thương mại điện tử toàn diện cho doanh nghiệp",
+                  "en": "Comprehensive e-commerce solutions for businesses",
+                  "jp": "企業向けの包括的なEコマースソリューション"
+                }
+              ],
+              
+              // Icon (chọn từ lucide-react icons)
+              // 📌 DANH SÁCH ICON PHỔ BIẾN:
+              // - briefcase: Công việc/Business
+              // - shopping-bag: Mua sắm/E-commerce
+              // - heart-pulse: Y tế/Healthcare
+              // - landmark: Tài chính/Banking
+              // - graduation-cap: Giáo dục/Education
+              // - store: Bán lẻ/Retail
+              // - globe: Toàn cầu/Global
+              // - users: Cộng đồng/Community
+              // - zap: Công nghệ/Tech
+              // - shield: Bảo mật/Security
+              "icon": "shopping-bag"
+            }
+          ],
+          
+          // ┌─────────────────────────────────────────────────────────────────────┐
+          // │ CERTIFICATES - Chứng chỉ, giải thưởng, công nhận của công ty       │
+          // └─────────────────────────────────────────────────────────────────────┘
+          "certificates": [
+            {
+              "fieldId": "certificates",
+              
+              // Tên chứng chỉ (3 ngôn ngữ) - Array chứa 1 object
+              "name": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Chứng nhận ISO 9001:2015",
+                  "en": "ISO 9001:2015 Certification",
+                  "jp": "ISO 9001:2015認証"
+                }
+              ],
+              
+              // Đơn vị cấp chứng chỉ (3 ngôn ngữ) - Array chứa 1 object
+              "issuer": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Tổ chức Tiêu chuẩn Quốc tế",
+                  "en": "International Organization for Standardization",
+                  "jp": "国際標準化機構"
+                }
+              ],
+              
+              // Năm cấp (TEXT - nhập năm đơn giản)
+              // Ví dụ: "2023", "2024"
+              "year": "2023",
+              
+              // Logo chứng chỉ
+              // 📐 YÊU CẦU: 400x300px (tỷ lệ 4:3)
+              // 📦 Định dạng: PNG hoặc JPG
+              // 💾 Dung lượng: < 200KB
+              // 🎨 Chất lượng: Nền trong suốt (PNG) hoặc nền trắng
+              // ✅ Upload qua microCMS Media Library → Copy URL vào đây
+              "logo": {
+                "url": "https://images.microcms-assets.io/assets/XXXXX/certificate-iso.png",
+                "width": 400,
+                "height": 300
+              }
+            }
+          ],
+          
+          // ┌─────────────────────────────────────────────────────────────────────┐
+          // │ PARTNERS - Đối tác chiến lược của công ty                          │
+          // └─────────────────────────────────────────────────────────────────────┘
+          "partners": [
+            {
+              "fieldId": "partners",
+              
+              // Tên đối tác (3 ngôn ngữ) - Array chứa 1 object
+              "name": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Microsoft",
+                  "en": "Microsoft",
+                  "jp": "マイクロソフト"
+                }
+              ],
+              
+              // Logo đối tác
+              // 📐 YÊU CẦU: 300x200px (tỷ lệ 3:2)
+              // 📦 Định dạng: PNG (nền trong suốt) hoặc JPG (nền trắng)
+              // 💾 Dung lượng: < 150KB
+              // 🎨 Chất lượng: High resolution, logo rõ nét
+              // ✅ Upload qua microCMS Media Library → Copy URL vào đây
+              "logo": {
+                "url": "https://images.microcms-assets.io/assets/XXXXX/partner-microsoft.png",
+                "width": 300,
+                "height": 200
+              }
+            }
+          ]
+        },
+        
+        // ─────────────────────────────────────────────────────────────────────────
+        // PHẦN 2: PROJECTS - Danh sách dự án của công ty
+        // ─────────────────────────────────────────────────────────────────────────
+        {
+          "fieldId": "main_content",
+          
+          "projects": [
+            {
+              "fieldId": "project",
+              
+              // ═══════════════════════════════════════════════════════════════════
+              // THÔNG TIN CƠ BẢN
+              // ═══════════════════════════════════════════════════════════════════
+              
+              // Slug cho URL (chỉ chữ thường, dấu gạch ngang, không dấu)
+              // ⚠️ QUAN TRỌNG: Slug phải unique, không trùng lặp
+              // Ví dụ: shopee-recommendation, vinmec-telemedicine
+              "slug": "shopee-recommendation-system",
+              
+              // Loại dự án - Select field (chọn 1 trong 3)
+              // ⚠️ CHỈ CHỌN: ["WEB"], ["AI"], hoặc ["DATA"]
+              // - ["WEB"]: Website/Web App
+              // - ["AI"]: AI/Machine Learning
+              // - ["DATA"]: Data Analytics/BI
+              "category": ["WEB"],
+              
+              // Trạng thái dự án - Select field (chọn 1)
+              // ⚠️ CHỈ CHỌN: ["Done"] hoặc ["In Progress"]
+              "status": ["Done"],
+              
+              // Domains liên quan - TEXT (cách nhau bởi dấu phẩy)
+              // ⚠️ QUAN TRỌNG: Dùng slug của domains đã định nghĩa ở trên
+              // Ví dụ: "ecommerce,healthcare" hoặc "finance,retail"
+              "domains": "ecommerce,retail",
+              
+              // ═══════════════════════════════════════════════════════════════════
+              // NỘI DUNG ĐA NGÔN NGỮ
+              // ═══════════════════════════════════════════════════════════════════
+              
+              // Tên dự án (3 ngôn ngữ) - Array chứa 1 object
+              // Độ dài đề xuất: 30-60 ký tự
+              "title": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Hệ thống Gợi ý Sản phẩm Shopee",
+                  "en": "Shopee Product Recommendation System",
+                  "jp": "Shopee商品推薦システム"
+                }
+              ],
+              
+              // Mô tả ngắn (3 ngôn ngữ) - Array chứa 1 object
+              // Độ dài đề xuất: 100-200 ký tự
+              "description": [
+                {
+                  "fieldId": "locale_content",
+                  "vi": "Hệ thống AI gợi ý sản phẩm cá nhân hóa giúp tăng 45% tỷ lệ chuyển đổi",
+                  "en": "AI-powered personalized product recommendation system that increased conversion rate by 45%",
+                  "jp": "コンバージョン率を45％向上させたAI搭載のパーソナライズ商品推薦システム"
+                }
+              ],
+              
+              // Ảnh thumbnail chính
+              // 📐 YÊU CẦU: 1920x1080px (Full HD, tỷ lệ 16:9)
+              // 📦 Định dạng: JPG (nén tốt) hoặc PNG
+              // 💾 Dung lượng: < 500KB (khuyến nghị 200-300KB)
+              // 🎨 Chất lượng: 80-90% (balance giữa chất lượng và dung lượng)
+              // 📌 LƯU Ý: Ảnh này hiển thị trên:
+              //    - Card dự án trong danh sách
+              //    - Banner header trang chi tiết
+              //    - Preview khi share social media
+              // ✅ Upload qua microCMS Media Library → Copy URL vào đây
+              "thumbnail": {
+                "url": "https://images.microcms-assets.io/assets/XXXXX/project-shopee-thumb.jpg",
+                "width": 1920,
+                "height": 1080
+              },
+              
+              // ═══════════════════════════════════════════════════════════════════
+              // CHALLENGE - Thách thức/Vấn đề cần giải quyết
+              // ═══════════════════════════════════════════════════════════════════
+              "challenge": {
+                "fieldId": "challenge",
+                
+                // Tiêu đề (3 ngôn ngữ) - Array chứa 1 object
+                "title": [
+                  {
+                    "fieldId": "locale_content",
+                    "vi": "Thách thức",
+                    "en": "The Challenge",
+                    "jp": "課題"
+                  }
+                ],
+                
+                // Nội dung chi tiết (3 ngôn ngữ, Markdown) - Array chứa 1 object
+                // 📝 HỖ TRỢ MARKDOWN:
+                //    - **bold text**: In đậm
+                //    - *italic text*: In nghiêng
+                //    - ## Heading: Tiêu đề
+                //    - - List item: Danh sách
+                //    - [link text](url): Liên kết
+                // Độ dài đề xuất: 200-500 ký tự
+                "content": [
+                  {
+                    "fieldId": "locale_content",
+                    "vi": "Shopee đối mặt với thách thức về tỷ lệ chuyển đổi thấp do:\n\n- Hệ thống gợi ý sản phẩm chưa cá nhân hóa\n- Người dùng khó tìm được sản phẩm phù hợp\n- Trải nghiệm mua sắm chưa tối ưu\n\nMục tiêu: Xây dựng hệ thống AI gợi ý sản phẩm thông minh",
+                    "en": "Shopee faced low conversion rates due to:\n\n- Non-personalized product recommendations\n- Users struggling to find relevant products\n- Suboptimal shopping experience\n\nGoal: Build an AI-powered intelligent product recommendation system",
+                    "jp": "Shopeeは低いコンバージョン率に直面していました：\n\n- パーソナライズされていない商品推薦\n- 関連商品を見つけにくいユーザー\n- 最適化されていないショッピング体験\n\n目標：AI搭載のインテリジェント商品推薦システムの構築"
+                  }
+                ]
+              },
+              
+              // ═══════════════════════════════════════════════════════════════════
+              // SOLUTION - Giải pháp/Cách thức giải quyết
+              // ═══════════════════════════════════════════════════════════════════
+              "solution": {
+                "fieldId": "solution",
+                
+                // Tiêu đề (3 ngôn ngữ) - Array chứa 1 object
+                "title": [
+                  {
+                    "fieldId": "locale_content",
+                    "vi": "Giải pháp",
+                    "en": "Our Solution",
+                    "jp": "ソリューション"
+                  }
+                ],
+                
+                // Nội dung chi tiết (3 ngôn ngữ, Markdown) - Array chứa 1 object
+                // Độ dài đề xuất: 300-700 ký tự
+                "content": [
+                  {
+                    "fieldId": "locale_content",
+                    "vi": "Chúng tôi xây dựng hệ thống AI recommendation với:\n\n- **Collaborative Filtering**: Phân tích hành vi người dùng tương tự\n- **Content-based Filtering**: Gợi ý dựa trên thuộc tính sản phẩm\n- **Deep Learning**: Mô hình neural network dự đoán sở thích\n- **Real-time Processing**: Cập nhật gợi ý theo thời gian thực",
+                    "en": "We built an AI recommendation system with:\n\n- **Collaborative Filtering**: Analyzing similar user behaviors\n- **Content-based Filtering**: Recommendations based on product attributes\n- **Deep Learning**: Neural network model predicting preferences\n- **Real-time Processing**: Real-time recommendation updates",
+                    "jp": "AI推薦システムを構築しました：\n\n- **協調フィルタリング**：類似ユーザーの行動分析\n- **コンテンツベースフィルタリング**：商品属性に基づく推薦\n- **ディープラーニング**：嗜好を予測するニューラルネットワークモデル\n- **リアルタイム処理**：リアルタイムの推薦更新"
+                  }
+                ],
+                
+                // Ảnh minh họa giải pháp (Array, có thể nhiều ảnh)
+                // 📐 YÊU CẦU: Đa dạng kích thước tùy nội dung
+                //    - Screenshots: 1920x1080px hoặc độ phân giải thực tế
+                //    - Diagrams: 1600x900px hoặc tùy thiết kế
+                //    - UI/UX mockups: 1440x900px hoặc độ phân giải thiết kế
+                // 📦 Định dạng: JPG (screenshots) hoặc PNG (diagrams có text)
+                // 💾 Dung lượng mỗi ảnh: < 400KB
+                // 📌 LƯU Ý: 
+                //    - Screenshots UI: Nên có độ phân giải cao, rõ nét
+                //    - Diagrams/flowcharts: Dùng PNG để giữ text sắc nét
+                //    - Có thể upload 3-6 ảnh để minh họa đầy đủ
+                // ✅ Upload qua microCMS Media Library → Copy URL vào đây
+                "images": [
+                  {
+                    "url": "https://images.microcms-assets.io/assets/XXXXX/solution-architecture.png",
+                    "width": 1600,
+                    "height": 900
+                  },
+                  {
+                    "url": "https://images.microcms-assets.io/assets/XXXXX/solution-ui.jpg",
+                    "width": 1920,
+                    "height": 1080
+                  }
+                ],
+                
+                // Tính năng nổi bật (Array, mỗi feature có title + description + image)
+                "features": [
+                  {
+                    "fieldId": "feature",
+                    
+                    // Tên tính năng (3 ngôn ngữ) - Array chứa 1 object
+                    "title": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Gợi ý cá nhân hóa theo thời gian thực",
+                        "en": "Real-time Personalized Recommendations",
+                        "jp": "リアルタイムパーソナライズ推薦"
+                      }
+                    ],
+                    
+                    // Mô tả tính năng (3 ngôn ngữ) - Array chứa 1 object
+                    "description": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Hệ thống phân tích hành vi người dùng và cập nhật gợi ý sản phẩm theo thời gian thực",
+                        "en": "System analyzes user behavior and updates product recommendations in real-time",
+                        "jp": "システムはユーザーの行動を分析し、商品推薦をリアルタイムで更新します"
+                      }
+                    ],
+                    
+                    // Ảnh minh họa tính năng (OPTIONAL - có thể không có)
+                    // 📐 YÊU CẦU: 800x600px (tỷ lệ 4:3) hoặc 1200x675px (16:9)
+                    // 📦 Định dạng: JPG hoặc PNG
+                    // 💾 Dung lượng: < 250KB
+                    // 📌 LƯU Ý: Có thể bỏ trống nếu không có ảnh phù hợp
+                    // ✅ Nếu có ảnh, upload qua microCMS Media Library
+                    "image_url": {
+                      "url": "https://images.microcms-assets.io/assets/XXXXX/feature-realtime.jpg",
+                      "width": 800,
+                      "height": 600
+                    }
+                  },
+                  {
+                    "fieldId": "feature",
+                    "title": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Machine Learning tối ưu hóa",
+                        "en": "Optimized Machine Learning",
+                        "jp": "最適化された機械学習"
+                      }
+                    ],
+                    "description": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Mô hình ML liên tục học và cải thiện độ chính xác gợi ý",
+                        "en": "ML model continuously learns and improves recommendation accuracy",
+                        "jp": "MLモデルが継続的に学習し、推薦精度を向上させます"
+                      }
+                    ]
+                    // ⚠️ Ví dụ này KHÔNG có image_url - Hoàn toàn OK!
+                  }
+                ]
+              },
+              
+              // ═══════════════════════════════════════════════════════════════════
+              // IMPACT - Kết quả/Tác động của dự án
+              // ═══════════════════════════════════════════════════════════════════
+              "impact": {
+                "fieldId": "impact",
+                
+                // Tiêu đề (3 ngôn ngữ) - Array chứa 1 object
+                "title": [
+                  {
+                    "fieldId": "locale_content",
+                    "vi": "Tác động",
+                    "en": "Impact",
+                    "jp": "影響"
+                  }
+                ],
+                
+                // Metrics - Các chỉ số đo lường (Array)
+                "metrics": [
+                  {
+                    "fieldId": "metric",
+                    
+                    // Giá trị số (TEXT - có thể có đơn vị như %, $, x)
+                    // Ví dụ: "45%", "$2M", "3x", "10K+"
+                    "value": "45%",
+                    
+                    // Mô tả metric (3 ngôn ngữ) - Array chứa 1 object
+                    "description": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Tăng tỷ lệ chuyển đổi",
+                        "en": "Increase in conversion rate",
+                        "jp": "コンバージョン率の向上"
+                      }
+                    ]
+                  },
+                  {
+                    "fieldId": "metric",
+                    "value": "2.5x",
+                    "description": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Tăng giá trị đơn hàng trung bình",
+                        "en": "Average order value growth",
+                        "jp": "平均注文額の増加"
+                      }
+                    ]
+                  },
+                  {
+                    "fieldId": "metric",
+                    "value": "10M+",
+                    "description": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Gợi ý được tạo mỗi ngày",
+                        "en": "Recommendations generated daily",
+                        "jp": "毎日生成される推薦"
+                      }
+                    ]
+                  }
+                ]
+              },
+              
+              // ═══════════════════════════════════════════════════════════════════
+              // SERVICES PROVIDED - Dịch vụ đã cung cấp
+              // ═══════════════════════════════════════════════════════════════════
+              "services_provided": {
+                "fieldId": "services_provided",
+                
+                // Tiêu đề (3 ngôn ngữ) - Array chứa 1 object
+                "title": [
+                  {
+                    "fieldId": "locale_content",
+                    "vi": "Dịch vụ cung cấp",
+                    "en": "Services Provided",
+                    "jp": "提供サービス"
+                  }
+                ],
+                
+                // Danh sách dịch vụ (Array)
+                "services": [
+                  {
+                    "fieldId": "service",
+                    
+                    // Tên dịch vụ (3 ngôn ngữ) - Array chứa 1 object
+                    "name": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Phát triển Machine Learning",
+                        "en": "Machine Learning Development",
+                        "jp": "機械学習開発"
+                      }
+                    ],
+                    
+                    // Mô tả dịch vụ (3 ngôn ngữ) - Array chứa 1 object
+                    "description": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Xây dựng và triển khai mô hình ML cho hệ thống gợi ý",
+                        "en": "Building and deploying ML models for recommendation system",
+                        "jp": "推薦システムのためのMLモデルの構築とデプロイ"
+                      }
+                    ],
+                    
+                    // Icon dịch vụ (chọn từ lucide-react icons)
+                    // 📌 ICON PHỔ BIẾN:
+                    // - code: Lập trình/Development
+                    // - database: Database/Data
+                    // - brain: AI/ML
+                    // - cloud: Cloud/Infrastructure
+                    // - shield-check: Security
+                    // - line-chart: Analytics/Data Analysis
+                    // - smartphone: Mobile App
+                    // - monitor: Web Development
+                    // - settings: System/Backend
+                    // - palette: UI/UX Design
+                    "icon": "brain",
+                    
+                    // Ảnh minh họa dịch vụ (OPTIONAL)
+                    // 📐 YÊU CẦU: 800x600px (tỷ lệ 4:3)
+                    // 📦 Định dạng: JPG hoặc PNG
+                    // 💾 Dung lượng: < 250KB
+                    // 📌 LƯU Ý: Có thể bỏ trống nếu chỉ dùng icon
+                    "image": {
+                      "url": "https://images.microcms-assets.io/assets/XXXXX/service-ml.jpg",
+                      "width": 800,
+                      "height": 600
+                    }
+                  },
+                  {
+                    "fieldId": "service",
+                    "name": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Tích hợp API",
+                        "en": "API Integration",
+                        "jp": "API統合"
+                      }
+                    ],
+                    "description": [
+                      {
+                        "fieldId": "locale_content",
+                        "vi": "Tích hợp hệ thống với platform Shopee hiện tại",
+                        "en": "Integrating system with existing Shopee platform",
+                        "jp": "既存のShopeeプラットフォームとのシステム統合"
+                      }
+                    ],
+                    "icon": "code"
+                    // ⚠️ Ví dụ này KHÔNG có image - Chỉ dùng icon
+                  }
+                ]
+              },
+              
+              // ═══════════════════════════════════════════════════════════════════
+              // TECH STACK - Công nghệ sử dụng
+              // ═══════════════════════════════════════════════════════════════════
+              "tech_stack": [
+                {
+                  "fieldId": "tech_stack",
+                  
+                  // Nhãn/Danh mục công nghệ (3 ngôn ngữ) - Array chứa 1 object
+                  // Ví dụ: Frontend, Backend, AI/ML, Database, Cloud, DevOps
+                  "label": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "AI & Machine Learning",
+                      "en": "AI & Machine Learning",
+                      "jp": "AI・機械学習"
+                    }
+                  ],
+                  
+                  // Tên công nghệ (3 ngôn ngữ) - Array chứa 1 object
+                  // 📌 LƯU Ý: Tên công nghệ thường không cần dịch
+                  // Nhưng vẫn phải có 3 ngôn ngữ để đồng nhất
+                  "name": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "TensorFlow",
+                      "en": "TensorFlow",
+                      "jp": "TensorFlow"
+                    }
+                  ]
+                },
+                {
+                  "fieldId": "tech_stack",
+                  "label": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "AI & Machine Learning",
+                      "en": "AI & Machine Learning",
+                      "jp": "AI・機械学習"
+                    }
+                  ],
+                  "name": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "PyTorch",
+                      "en": "PyTorch",
+                      "jp": "PyTorch"
+                    }
+                  ]
+                },
+                {
+                  "fieldId": "tech_stack",
+                  "label": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Backend",
+                      "en": "Backend",
+                      "jp": "バックエンド"
+                    }
+                  ],
+                  "name": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Python",
+                      "en": "Python",
+                      "jp": "Python"
+                    }
+                  ]
+                },
+                {
+                  "fieldId": "tech_stack",
+                  "label": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Database",
+                      "en": "Database",
+                      "jp": "データベース"
+                    }
+                  ],
+                  "name": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "MongoDB",
+                      "en": "MongoDB",
+                      "jp": "MongoDB"
+                    }
+                  ]
+                },
+                {
+                  "fieldId": "tech_stack",
+                  "label": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "Cloud",
+                      "en": "Cloud",
+                      "jp": "クラウド"
+                    }
+                  ],
+                  "name": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "AWS",
+                      "en": "AWS",
+                      "jp": "AWS"
+                    }
+                  ]
+                }
+              ],
+              
+              // ═══════════════════════════════════════════════════════════════════
+              // FEATURED IN - Nơi dự án được đề cập/giới thiệu
+              // ═══════════════════════════════════════════════════════════════════
+              // ⚠️ CHỈ DÙNG CHO WEB PROJECTS - Không dùng cho AI/DATA projects
+              "featured_in": [
+                {
+                  "fieldId": "featured_in",
+                  
+                  // Tên nguồn/nơi đăng (3 ngôn ngữ) - Array chứa 1 object
+                  "name": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "TechCrunch",
+                      "en": "TechCrunch",
+                      "jp": "TechCrunch"
+                    }
+                  ],
+                  
+                  // Link bài viết (TEXT - URL đầy đủ)
+                  "url": "https://techcrunch.com/article/shopee-ai-recommendation",
+                  
+                  // Logo nguồn (OPTIONAL)
+                  // 📐 YÊU CẦU: 400x200px (tỷ lệ 2:1)
+                  // 📦 Định dạng: PNG (nền trong suốt) ưu tiên
+                  // 💾 Dung lượng: < 100KB
+                  // 📌 LƯU Ý: Có thể bỏ trống nếu không có logo
+                  "image_url": {
+                    "url": "https://images.microcms-assets.io/assets/XXXXX/logo-techcrunch.png",
+                    "width": 400,
+                    "height": 200
+                  }
+                },
+                {
+                  "fieldId": "featured_in",
+                  "name": [
+                    {
+                      "fieldId": "locale_content",
+                      "vi": "VnExpress",
+                      "en": "VnExpress",
+                      "jp": "VnExpress"
+                    }
+                  ],
+                  "url": "https://vnexpress.net/shopee-ai-system"
+                  // ⚠️ Ví dụ này KHÔNG có image_url
+                }
+              ]
+            }
+            // ... Thêm các projects khác tương tự
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// CHECKLIST TRƯỚC KHI PUBLISH
+// ═══════════════════════════════════════════════════════════════════════════════
+// 
+// ✅ Đã điền đầy đủ 3 ngôn ngữ (vi/en/jp) cho tất cả text fields
+// ✅ Tất cả ảnh đã upload qua microCMS Media Library
+// ✅ Kích thước ảnh đúng yêu cầu (xem chú thích trên)
+// ✅ Dung lượng ảnh < giới hạn (xem chú thích trên)
+// ✅ Slug là unique, không trùng lặp, không dấu, chỉ dùng a-z, 0-9, dấu gạch ngang
+// ✅ Select fields (category, status) đã chọn đúng giá trị
+// ✅ Tech stack đã nhóm theo label (Frontend, Backend, AI/ML, etc.)
+// ✅ Featured_in chỉ dùng cho WEB projects
+// ✅ Tất cả URLs đã kiểm tra hoạt động
+// ✅ Preview trên microCMS trước khi publish
+//
+// ═══════════════════════════════════════════════════════════════════════════════
+// HỖ TRỢ
+// ═══════════════════════════════════════════════════════════════════════════════
+// 
+// Nếu gặp vấn đề hoặc cần hỗ trợ:
+// 1. Kiểm tra lại cấu trúc JSON (dấu ngoặc, dấu phẩy)
+// 2. Kiểm tra fieldId có đúng không
+// 3. Kiểm tra URLs ảnh có hoạt động không
+// 4. Liên hệ team Dev nếu cần thay đổi cấu trúc API
+//
+// ═══════════════════════════════════════════════════════════════════════════════
